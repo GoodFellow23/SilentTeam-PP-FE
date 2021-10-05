@@ -1,0 +1,6 @@
+@import '../../styles/common.scss';
+
+.card_wrapper {
+  cursor: pointer;
+  @include iconHoverWithTransition;
+}

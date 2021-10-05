@@ -1,0 +1,72 @@
+@import '../../styles/common.scss';
+
+.lobbyPage_section_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.lobbyPage_section_link > h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-style: italic;
+}
+
+.lobbyPage_location {
+  width: auto;
+  max-width: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.lobbyPage_location p {
+  box-shadow: 0 4px 4px 0 $shadow-one-quarter;
+  border-radius: 0 0 0 10px;
+  padding: 5px 5px 5px 15px;
+  max-width: 220px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-style: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 5px 0;
+}
+
+.lobbyPage_location button {
+  margin: 0;
+}
+
+.lobbyPage_section_button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lobbyPage_section_button button {
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .lobbyPage_section_link {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lobbyPage_location {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .lobbyPage_section_button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

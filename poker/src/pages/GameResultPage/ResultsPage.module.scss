@@ -1,0 +1,65 @@
+@import '../../styles/common.scss';
+
+.results_wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 4px 4px $shadow-one-quarter;
+  padding: 10px;
+}
+
+.results_issue_statustics {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+
+  div {
+    background-color: transparent;
+  }
+}
+
+.results_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  div {
+    background-color: white;
+  }
+}
+
+.results_card_and_result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results_card_and_result h3 {
+  margin: 0;
+}
+
+.results_buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .results_buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

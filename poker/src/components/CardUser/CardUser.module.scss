@@ -1,0 +1,97 @@
+@import '../../styles/common.scss';
+
+.CardUser_wrap {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 4px 4px $shadow-one-quarter;
+  border-radius: 3px;
+  width: 250px;
+  height: 60px;
+  margin: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.CardUser_wrapAva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardUser_wrapAva span {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.CardUser_fullName {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.CardUser_fullName > h3 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+.CardUser_surname {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.CardUser_job {
+  text-align: end;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.CardUser_kickButtonWrapper {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.CardUser_kickButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+
+.CardUser_kickButton::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $red-light;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CardUser_kickButton::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

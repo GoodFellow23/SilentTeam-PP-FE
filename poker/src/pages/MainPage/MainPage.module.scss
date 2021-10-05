@@ -1,0 +1,62 @@
+@import '../../styles/common.scss';
+
+.MainPage_wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 80px;
+  box-shadow: 0 4px 4px 0 $shadow-one-quarter;
+}
+
+.MainPage_wrap h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: $base-cadet-blue;
+}
+
+.MainPage_wrap label {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: $base-dark;
+}
+
+.MainPage_wrap label span {
+  color: $base-cadet-blue;
+}
+
+.MainPage_item {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .MainPage_wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .MainPage_item {
+    width: 270px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .MainPage_wrap h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $base-cadet-blue;
+    margin: 10px;
+  }
+  .MainPage_wrap label {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0 auto;
+  }
+  .MainPage_item input {
+    margin: 10px auto;
+  }
+}

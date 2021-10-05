@@ -1,0 +1,52 @@
+@import '../../styles/common.scss';
+
+.cardIssue_wrap {
+  box-shadow: 0 4px 4px $shadow-one-quarter;
+  border-radius: 3px;
+  width: 250px;
+  height: 60px;
+  margin: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.cardIssue_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.cardIssue_item h3 {
+  font-size: 1.2rem;
+  line-height: 4rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.cardIssue_item p {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.cardIssue_item_buttons button,
+.cardIssue_item button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 2.5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  @include iconHoverWithTransition;
+}
+
+.cardIssue_item_buttons button img,
+.cardIssue_item button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

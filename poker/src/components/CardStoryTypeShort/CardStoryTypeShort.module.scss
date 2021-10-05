@@ -1,0 +1,35 @@
+@import '../../styles/common.scss';
+
+.Card_wrap {
+  width: 85px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 $shadow-one-quarter;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Card_wrap h3 {
+  font-size: 2rem;
+}
+
+.Card_value_top {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.Card_value_bottom {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+}
+
+.Card_value_top,
+.Card_value_bottom {
+  font-size: 1.2rem;
+  font-weight: 300;
+}

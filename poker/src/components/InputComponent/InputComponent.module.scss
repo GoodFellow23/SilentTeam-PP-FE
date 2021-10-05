@@ -1,0 +1,37 @@
+@import '../../styles/common.scss';
+
+.InputComponent_error,
+.InputComponent {
+  background: $red-light;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 4px $shadow-one-quarter;
+  border-radius: 0px 0px 0px 10px;
+  width: 100%;
+  max-width: 276px;
+  height: 42px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  outline: none;
+}
+
+.InputComponent {
+  border: 1px solid $base-dark-blue;
+}
+
+.InputComponent_error {
+  border: 1px solid $red-red;
+}
+
+@media screen and (max-width: 768px) {
+  .InputComponent {
+    max-width: 200px;
+    height: 2rem;
+    margin: 5px;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}

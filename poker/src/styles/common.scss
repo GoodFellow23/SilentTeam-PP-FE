@@ -1,0 +1,50 @@
+$base-dark: #000000;
+$base-dark-blue: #2b3a67;
+$base-cornflower-blue: #496b83;
+$base-cadet-blue: #66999b;
+$base-azure: #b3af8f;
+$base-antique: #ffc482;
+$base-checkbox-uncheked: #c4c4c4;
+$blue-light: #d9f1f8;
+$gray-light: #f6f6f6;
+
+$red-red: #ff0000;
+$red-orange-red: #ff3333;
+$red-clarified-red: #ff6666;
+$red-light-red: #ff9999;
+$red-light: #ffffff;
+$red-light-kick: #fff2f2;
+
+$variable-sky-blue: #5fd1b8;
+$variable-chocolate: #b7631a;
+$variable-dark-violet: #7d3488;
+$variable-red: #e42b77;
+$variable-orchid: #c34bad;
+$variable-violet: #a527b1;
+$variable-turquoise: #24a6ac;
+$variable-khaki: #a1b261;
+$variable-sea-green: #a1bb41;
+
+$shadow-one-quarter: rgba(0, 0, 0, 0.25);
+
+$duration-for-hover-icon: 0.1s;
+
+$scale-for-hover-icon: 1.1;
+
+$font-weight: 600;
+
+@mixin iconHoverWithTransition {
+  transition: transform $duration-for-hover-icon;
+  &:hover {
+    cursor: pointer;
+    transform: scale($scale-for-hover-icon);
+  }
+}
+
+@mixin chatCardWrap {
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px $shadow-one-quarter;
+}

@@ -1,0 +1,65 @@
+@import '../../styles/common.scss';
+
+.issue_modal_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $shadow-one-quarter;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.issue_modal_form {
+  margin-top: 50px;
+  width: 768px;
+  background-color: $red-light;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+  box-shadow: $shadow-one-quarter;
+
+  label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+  }
+}
+
+.issue_error {
+  color: $red-red;
+  font-size: 1.2rem;
+}
+
+.issue_modal_footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .issue_modal_form {
+    margin-top: 50px;
+    width: 90%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .issue_modal_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

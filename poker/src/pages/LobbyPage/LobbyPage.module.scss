@@ -1,0 +1,39 @@
+@import '../../styles/common.scss';
+
+.lobbyPage_wrap {
+  z-index: 0;
+}
+
+.lobbyPage_container {
+  max-width: 810px;
+  margin: 0 auto;
+  box-shadow: 0 4px 4px 0 $shadow-one-quarter;
+  padding: 25px;
+}
+
+.lobbyPage_section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.lobby_late {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lobbyPage_section {
+    justify-content: center;
+  }
+}

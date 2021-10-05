@@ -1,0 +1,52 @@
+@import '../../styles/common.scss';
+
+.IssueChatUserCard_wrap {
+  flex-basis: 70%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  @include chatCardWrap;
+  margin-left: 0;
+  padding: 0.5rem;
+}
+
+.IssueChatUserCard_user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.IssueChatUserCard_user_ava_and_status {
+  margin-right: 10px;
+}
+
+.IssueChatUserCard_you {
+  margin-bottom: 0px;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+.IssueChatUserCard_user_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.IssueChatUserCard_name {
+  margin: 0px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.IssueChatUserCard_job {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.IssueChatUserCard_icon {
+  width: 1rem;
+  height: 1rem;
+  @include iconHoverWithTransition;
+}

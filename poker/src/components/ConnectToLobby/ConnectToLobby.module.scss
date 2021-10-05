@@ -1,0 +1,164 @@
+@import '../../styles/common.scss';
+
+.Form_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $shadow-one-quarter;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+
+.Form {
+  margin-top: 50px;
+  width: 768px;
+  background-color: $red-light;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+  box-shadow: $shadow-one-quarter;
+}
+
+.Form_header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Form_header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  flex-basis: 75%;
+  margin: 0;
+}
+
+.Form_wrap_checkbox_big_screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Form_wrap_checkbox_small_screen {
+  display: none;
+}
+
+.Form_header .Form_is_observer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.Form_header input {
+  transform: translateX(-40px);
+}
+
+.Form_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 50px 0;
+}
+
+div.Form_body > label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+div.Form_body input {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  padding-left: 10px;
+}
+
+.Form_footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Form_error {
+  color: $red-red;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Form_wrap {
+    padding-bottom: 370px;
+  }
+
+  .Form {
+    margin-top: 50px;
+    width: 90%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Form_header {
+    width: 100%;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .Form_header h2 {
+    font-size: 2rem;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .Form_wrap_checkbox_big_screen {
+    display: none;
+  }
+  
+  .Form_wrap_checkbox_small_screen {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Form_body {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.Form_body > label {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-left: 10px;
+  }
+  
+  div.Form_body input {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  
+  .Form_wrap_checkbox_small_screen .Form_is_observer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-right: 10px;
+  }
+  
+  .Form_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Form_error {
+    text-align: center;
+  }
+}

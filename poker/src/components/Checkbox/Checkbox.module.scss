@@ -1,0 +1,38 @@
+@import '../../styles/common.scss';
+
+.Checkbox_container {
+  .Checkbox {
+    position: relative;
+    width: 45px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: $base-checkbox-uncheked;
+    outline: none;
+    border-radius: 22.5px;
+    box-shadow: inset 0 4px 4px 0 $shadow-one-quarter;
+    transition: all 0.3s ease-in-out;
+
+    &:checked {
+      background: $variable-sky-blue;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 25px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      background: $red-light;
+      border-radius: 20px;
+      box-shadow: 0 4px 4px 0 $shadow-one-quarter;
+      transition: all 500ms ease-in-out;
+    }
+
+    &:checked:before {
+      left: 5px;
+      transition: all 500ms ease-in-out;
+    }
+  }
+}

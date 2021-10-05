@@ -1,0 +1,72 @@
+@import '../../styles/common.scss';
+
+.Card_wrap,
+.Card_wrap_selected {
+  width: 85px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 $shadow-one-quarter;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card_new img {
+  width: 20px;
+  height: 20px;
+  border: 5px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  @include iconHoverWithTransition;
+}
+
+.Card_coffeetime img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.Card_value img {
+  width: 22px;
+  height: 22px;
+}
+
+.Card_value {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Card_value_top {
+  position: absolute;
+  top: -5px;
+  left: 15px;
+}
+
+.Card_value_bottom {
+  position: absolute;
+  bottom: -5px;
+  right: 15px;
+}
+
+.Card_value_top,
+.Card_value_bottom {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Card_value img {
+  margin: 5px;
+  @include iconHoverWithTransition;
+}
+
+.Card_value input {
+  width: 50px;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 5px;
+}

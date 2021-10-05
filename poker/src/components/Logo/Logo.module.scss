@@ -1,0 +1,42 @@
+@import '../../styles/common.scss';
+
+.Logo_bg {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: relative;
+}
+
+.Logo_bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background-color: $base-antique;
+  box-shadow: 0 4px 4px 0 $shadow-one-quarter;
+}
+
+.Logo_upP,
+.Logo_downP {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px $shadow-one-quarter;
+  position: absolute;
+}
+
+.Logo_upP {
+  color: $base-cadet-blue;
+  top: -5px;
+  right: 5px;
+}
+
+.Logo_downP {
+  color: $red-light;
+  bottom: -5px;
+  left: 5px;
+}

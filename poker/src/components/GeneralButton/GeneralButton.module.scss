@@ -1,0 +1,64 @@
+@import '../../styles/common.scss';
+
+.GeneralButton_primary,
+.GeneralButton_secondary {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  min-width: 200px;
+  border: 1px solid $base-cornflower-blue;
+  border-radius: 2px;
+  font-family: 'Ruda', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.GeneralButton_primary {
+  color: $red-light;
+  background-color: $base-dark-blue;
+}
+
+.GeneralButton_secondary {
+  color: $base-dark-blue;
+  background-color: $red-light;
+  text-shadow: 0 4px 4px $shadow-one-quarter;
+}
+
+.GeneralButton_secondary:hover {
+  color: $red-light;
+  background-color: $base-dark-blue;
+  text-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.GeneralButton_primary:hover {
+  color: $base-dark-blue;
+  background-color: $red-light;
+  text-shadow: 0 4px 4px $shadow-one-quarter;
+  transition: all 0.3s ease-in-out;
+}
+
+.GeneralButton_secondary:active {
+  filter: opacity(0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.GeneralButton_primary:active {
+  filter: opacity(0.8);
+  text-shadow: 0 4px 4px $shadow-one-quarter;
+  transition: all 0.3s ease-in-out;
+}
+
+.GeneralButton_primary:disabled,
+.GeneralButton_secondary:disabled {
+  filter: opacity(0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .GeneralButton_primary,
+  .GeneralButton_secondary {
+    font-size: 1rem;
+  }
+}

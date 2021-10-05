@@ -1,0 +1,25 @@
+@import '../../styles/common.scss';
+
+.cardIssue_wrap,
+.cardIssue_checkedWrap {
+  box-shadow: 0 4px 4px $shadow-one-quarter;
+  border-radius: 3px;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  padding: 0 12.5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cardIssue_checkedWrap {
+  background-color: $variable-sky-blue;
+}
+
+.cardIssue_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}

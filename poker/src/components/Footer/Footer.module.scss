@@ -1,0 +1,21 @@
+@import '../../styles/common.scss';
+
+.Footer_wrap {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: $base-dark-blue;
+  color: $red-light;
+  font-size: 18px;
+}
+
+.Footer_item {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 5px;
+}
